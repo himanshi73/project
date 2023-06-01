@@ -1,12 +1,11 @@
-import { BrowserRouter } from "react-router-dom";
-import RoutersNav from ".view/routersnav/RoutersNav";
-
-export default function App()
-{
+import { BrowserRouter } from "react-router-dom"
+import RoutersScreen from "./view/routers/RoutersScreen"
+export default function App(){
   return(
     <>
-    <RoutersNav/>
-    <BrowserRouter/>
+    <BrowserRouter>
+    <RoutersScreen/>
+    </BrowserRouter>
     </>
   )
 }

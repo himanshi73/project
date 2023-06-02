@@ -1,6 +1,6 @@
 import { Route , Link, Routes } from "react-router-dom";
 import Register from "../screen/Register";
-import Home from "../screen/Home";
+import Home from "../screen/home";
 import Product from "../screen/Product";
 import Login from "../screen/Login";
 export default function RoutersScreen(){

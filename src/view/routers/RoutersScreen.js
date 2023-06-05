@@ -1,8 +1,8 @@
 import { Route , Link, Routes } from "react-router-dom";
 import Register from "../screen/Register";
-import Home from "../screen/home";
 import Product from "../screen/Product";
 import Login from "../screen/Login";
+import Home from "../screen/Home";
 export default function RoutersScreen(){
     return(
      <>
@@ -13,7 +13,7 @@ export default function RoutersScreen(){
         < Link to="/login">Login</Link>
      </div>
      <Routes>
-        <Route path="/" Component={Home}/>
+        <Route path="/home" Component={Home}/>
         <Route path="/register" Component={Register}/>
         <Route path="/login" Component={Login}/>
         <Route path="/product" Component={Product}/>

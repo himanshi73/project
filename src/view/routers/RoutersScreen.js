@@ -1,8 +1,8 @@
 import { Route , Link, Routes } from "react-router-dom";
-import Register from "../screen/Register";
-import Product from "../screen/Product";
-import Login from "../screen/Login";
-import Home from "../screen/Home";
+import Register from "../screen/Register"
+import Product from "../screen/Product"
+import Login from "../screen/Login"
+import Home from "../screen/Home"
 export default function RoutersScreen(){
     return(
      <>

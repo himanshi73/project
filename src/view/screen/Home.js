@@ -1,51 +1,16 @@
-import { Row,Col, Container,Carousel,Nav, Navbar,} from "react-bootstrap"
-export default function Home(){
-  return(
-    <>
-    <Navbar bg="dark" variant="dark">
-      <Container>
-        <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-        <Nav className="me-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#features">Features</Nav.Link>
-          <Nav.Link href="#pricing">Pricing</Nav.Link>
-        </Nav>
-      </Container>
-    </Navbar>
-    <br />
-    <Navbar bg="primary" variant="dark">
-      <Container>
-        <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-        <Nav className="me-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#features">Features</Nav.Link>
-          <Nav.Link href="#pricing">Pricing</Nav.Link>
-        </Nav>
-      </Container>
-    </Navbar>
+import { Row,Col, Container,Carousel} from "react-bootstrap"
 
-    <br />
-    <Navbar bg="light" variant="light">
-      <Container>
-        <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-        <Nav className="me-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#features">Features</Nav.Link>
-          <Nav.Link href="#pricing">Pricing</Nav.Link>
-        </Nav>
-      </Container>
-    </Navbar>
-  </>
-);
-   
+export default function Home(){
+  
+  return(
 <Container>
 <Row>
 <Col>
 <Carousel>
-      <Carousel.Item>
+<Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?q=10&h=200"
+          src="holder.js/800x400?text=First slide&bg=373940"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -56,7 +21,7 @@ export default function Home(){
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?q=10&h=200"
+          src="holder.js/800x400?text=Second slide&bg=282c34"
           alt="Second slide"
         />
 
@@ -68,7 +33,7 @@ export default function Home(){
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?q=10&h=200"
+          src="holder.js/800x400?text=Third slide&bg=20232a"
           alt="Third slide"
         />
 
@@ -83,4 +48,5 @@ export default function Home(){
 </Col>
 </Row>
 </Container>
+)
 }

@@ -103,6 +103,7 @@ export default function Details(){
   <h1><u>Beans Varieties</u></h1>
 </Col>
 </Row>
+<div className="beans">
 <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="https://enjoyjava.com/wp-content/uploads/2018/01/what-is-arabica-coffee.jpg"/>
       <Card.Body>
@@ -113,6 +114,37 @@ export default function Details(){
         <Button variant="primary">oder now</Button>
       </Card.Body>
     </Card>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="https://enjoyjava.com/wp-content/uploads/2018/02/Robusta-coffee-beans-roatsted-close-up.jpg"/>
+      <Card.Body>
+        <Card.Title>Robusta</Card.Title>
+        <Card.Text>
+        Coffee made from beans of the Coffea canephora plant has low acidity and high bitterness, often with a distinct woody and nutty taste
+        </Card.Text>
+        <Button variant="primary">oder now</Button>
+      </Card.Body>
+    </Card>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="https://mews.in/wp-content/uploads/2022/08/excelsa-coffee-mews-1-e1661758808379.jpg"/>
+      <Card.Body>
+        <Card.Title>Excelsa</Card.Title>
+        <Card.Text>
+        Excelsa coffee is a bean species known for its exceptional flavor profile. Some of the flavor notes most often associated with excelsa coffee include fruity, woody, and earthy notes.
+        </Card.Text>
+        <Button variant="primary">oder now</Button>
+      </Card.Body>
+    </Card>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="https://www.shutterstock.com/image-photo/coffee-beans-roasted-liberica-close-260nw-1854245281.jpg"/>
+      <Card.Body>
+        <Card.Title>Liberica</Card.Title>
+        <Card.Text>
+        Coffea liberica, commonly known as the Liberian coffee, is a species of flowering plant in the family Rubiaceae from which coffee is produced.
+        </Card.Text>
+        <Button variant="primary">oder now</Button>
+      </Card.Body>
+    </Card>
+</div>
 </Col>
 </Row>
  </Container>     

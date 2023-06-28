@@ -121,8 +121,6 @@ export default function Home() {
 <Row>
 
 <Card className="image">
-{
-  product1&&product1.map(d=>(
     <Col>
 
  
@@ -135,8 +133,6 @@ export default function Home() {
         <Card.Text><button>Read More</button></Card.Text>
       </Card.ImgOverlay>
   </Col>
-  ))
-}
 </Card>
     </Row>
  <Row>

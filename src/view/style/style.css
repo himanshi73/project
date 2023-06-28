@@ -43,4 +43,9 @@
     height: 500px;
     margin: auto;
 }
-
+.coffee{
+    display:inline-flex;
+}
+.coffee2{
+    display: inline-flex;
+}

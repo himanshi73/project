@@ -122,8 +122,6 @@ export default function Home() {
 
 <Card className="image">
     <Col>
-
- 
       <Card.Img src="https://media.istockphoto.com/id/1150531567/vector/modern-caf%C3%A9-shop-exterior-street-caf%C3%A9-outdoor-terrace-flat-design-vector-illustration.jpg?s=612x612&w=0&k=20&c=KJ_cG1E8fgFAbq28L-ipDXK9oWG-rsOM8DHxV5RtFCs="/>
       <Card.ImgOverlay>
         <Card.Title>Coffee distribution</Card.Title>

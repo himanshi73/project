@@ -1,14 +1,18 @@
-import { Col, Container, Row,Nav,Button,Form,Navbar,Card,Image } from 'react-bootstrap';
+import { Col, Container, Row,Nav,Button,Form,Navbar,Card,CardGroup } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
+import { banner,product1,about } from '../data/Data';
+import { useNavigate } from 'react-router-dom';
 export default function Home() {
+  console.log(banner)
+  console.log(about)
+  const nav = useNavigate()
   return (
     <Container>
       <Row>
         <Col>
-    
-        <Navbar bg="light" expand="lg">
-      <Container fluid>
-        <Navbar.Brand href="#">DozeCafe</Navbar.Brand>
+       <Navbar bg="light" expand="lg">
+        <Container fluid>
+        <Navbar.Brand href="#">EDUKATE</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -18,9 +22,8 @@ export default function Home() {
           >
             <Nav.Link href="#action1">Home</Nav.Link>
             <Nav.Link href="#action2">About</Nav.Link>
-            <Nav.Link href="#action3">coffees</Nav.Link>
-            <Nav.Link href="#action4">Shop</Nav.Link>
-            <Nav.Link href="#action5">Blog</Nav.Link>
+            <Nav.Link href="#action3">Courses</Nav.Link>
+            <Nav.Link href="#action4">Pages</Nav.Link>
             <Nav.Link href="#action6">Contact</Nav.Link>
             <Nav.Link href="#" disabled>
               
@@ -39,49 +42,29 @@ export default function Home() {
       </Container>
     </Navbar>
      <Carousel slide={false}>
-      <Carousel.Item>
-        <img
-          className="slider"
-          src="https://c4.wallpaperflare.com/wallpaper/231/256/948/coffee-bean-cup-still-life-photography-coffee-cup-wallpaper-preview.jpg"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h1>coffee</h1>
-          <h2>Tasty Of DozeCafe</h2>
-          <p>more-or-less normal distribution of letters, as opposed to using</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="slider"
-          src="https://c4.wallpaperflare.com/wallpaper/1023/43/668/coffee-cup-coffee-cup-caffeine-wallpaper-preview.jpg"
-          alt="Second slide"
-        />
-
-        <Carousel.Caption>
-        <h1>coffee</h1>
-          <h2>Tasty Of DozeCafe</h2>
-          <p>more-or-less normal distribution of letters, as opposed to using</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="slider"
-          src="https://thumbs.dreamstime.com/b/cup-coffee-love-28241518.jpg"
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-        <h1>coffee</h1>
-          <h2>Tasty Of DozeCafe</h2>
-          <p>more-or-less normal distribution of letters, as opposed to using</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel> 
+      {
+        banner.map(function(d)
+        {return(
+<Carousel.Item>
+          <img
+            className="slider"
+            src={d}
+            alt="First slide"
+          />
+          <Carousel.Caption style={{top:160}}>
+           <h1 style={{top:20, bottom:30}}><b>COFFEE</b></h1>
+            <h2><i>Tasty Of DozeCafe</i></h2>
+            <p>more-or-less normal distribution of letters, as opposed to using</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+         )
+        })
+}      
+       </Carousel> 
  
  <Row>
  <Col className='space'>
-  <h1>OUR COFFEE OFFER</h1>
+  <h1><u>OUR COFFEE OFFER</u></h1>
 </Col>
 </Row>
 <div className="d-flex justify-content-around">
@@ -92,7 +75,7 @@ export default function Home() {
           <Card.Text>
             looking at its layout. The point of
           </Card.Text>
-          <Button variant="primary">Read More</Button>
+          <Button variant="primary">See More</Button>
         </Card.Body>
       </Card>
 
@@ -103,7 +86,7 @@ export default function Home() {
           <Card.Text>
             looking at its layout. The point of
           </Card.Text>
-          <Button variant="primary">Read More</Button>
+          <Button variant="primary">See More</Button>
         </Card.Body>
       </Card>
 
@@ -115,7 +98,7 @@ export default function Home() {
           <Card.Text>
           looking at its layout. The point of
           </Card.Text>
-          <Button variant="primary">Read More</Button>
+          <Button variant="primary">See More</Button>
         </Card.Body>
       </Card>
 
@@ -126,36 +109,140 @@ export default function Home() {
           <Card.Text>
             looking at its layout. The point of
           </Card.Text>
-          <Button variant="primary">Read More</Button>
+          <Button variant="primary">See More</Button>
         </Card.Body>
       </Card>
 </div>
 <Row>
  <Col className='about'>
-  <h1>ABOUT OUR SHOP</h1>
+  <h1><u>ABOUT US</u></h1>
 </Col>
 </Row>
-<Container>
-      <Row>
-        <Col  lg={6} md={4} className='image'>
-          <div className='img'>
-          <Image src="https://b.zmtcdn.com/data/pictures/1/19629341/2648d77ca00a0ca74ddecd5434a63678.jpg" thumbnail />
-        </div>
-        </Col>        
-      </Row>
-    </Container>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ,
-    <Row>
- <Col>
-  <div className='aboutus'>
-    <h1>Coffee distribution</h1>
-  <p>has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editorhas a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editor</p>
-  </div>
+<Row>
+
+<Card className="image">
+{
+  product1&&product1.map(d=>(
+    <Col>
+
+ 
+      <Card.Img src="https://media.istockphoto.com/id/1150531567/vector/modern-caf%C3%A9-shop-exterior-street-caf%C3%A9-outdoor-terrace-flat-design-vector-illustration.jpg?s=612x612&w=0&k=20&c=KJ_cG1E8fgFAbq28L-ipDXK9oWG-rsOM8DHxV5RtFCs="/>
+      <Card.ImgOverlay>
+        <Card.Title>Coffee distribution</Card.Title>
+        <Card.Text>
+        has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editorhas a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editor
+        </Card.Text>
+        <Card.Text><button>Read More</button></Card.Text>
+      </Card.ImgOverlay>
+  </Col>
+  ))
+}
+</Card>
+    </Row>
+ <Row>
+ <Col className='about'>
+  <h1><u>WHAT SYAS CUSTOMERS</u></h1>
 </Col>
 </Row>
 
+<CardGroup>
+      <Card>
+        <Card.Img variant="top" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww&w=1000&q=80" />
+        <Card.Body>
+          <Card.Title>Uliya den</Card.Title>
+          <Card.Text>
+          now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancynow use Lorem Ipsum as their default model text,
+          </Card.Text>
+        </Card.Body>
+        </Card>
+      <Card>
+        <Card.Img variant="top" src="https://images.squarespace-cdn.com/content/v1/54e5f14fe4b0072e737170a7/1440756870374-BDHGHU0JL82NLYQOZ2ET/Stranger+1+-+Simon" />
+        <Card.Body>
+          <Card.Title>Mihacal</Card.Title>
+          <Card.Text>
+          now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancynow use Lorem Ipsum as their default model text,
+          </Card.Text>
+        </Card.Body>
+       </Card>
+      <Card>
+        <Card.Img variant="top" src="https://media.istockphoto.com/id/1319763895/photo/smiling-mixed-race-mature-man-on-grey-background.jpg?s=612x612&w=0&k=20&c=ZiuzNX9LhTMMcRFrYNfq_zFR7O_aH-q7x1L5elko5uU=" />
+        <Card.Body>
+          <Card.Title>Joy Moark</Card.Title>
+          <Card.Text>
+          now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancynow use Lorem Ipsum as their default model text,
+          </Card.Text>
+        </Card.Body>
+        </Card>
+    </CardGroup>
+
+    <Row>
+ <Col className='about'>
+  <h1><u>OUR BLOG</u></h1>
+</Col>
+</Row>
+    <Row xs={1} md={2} className="g-4">
+      {Array.from({ length:1 }).map((_, idx) => (
+        <Col key={idx}>
+          <Card>
+            <Card.Img variant="top" src="https://howtostartanllc.com/images/business-ideas/business-idea-images/coffee-shop.jpg" />
+            <Card.Body>
+              <Card.Title>PREP TECHNIQUES COFFEE</Card.Title>
+              <Card.Text>
+              distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a moredistracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more
+             <button>Read More</button>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      ))}
+        {Array.from({ length:1 }).map((_, idx) => (
+        <Col key={idx}>
+          <Card>
+            <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuKfm81Vw5audd2MNcXaSI9z6tZylhdvpx9UdquhS6Ayk9ywAkeaBDzadA26-XeRtJBhY&usqp=CAU" />
+            <Card.Body>
+              <Card.Title>PREP TECHNIQUES COFFEE</Card.Title>
+              <Card.Text>
+              distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a moredistracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more
+              <button>Read More</button>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      ))}
+    </Row>
+    <Row>
+ <Col className='about'>
+  <h1><u>CONTACT US</u></h1>
+</Col>
+</Row>
+    <Form className='form'>
+      <Row className="mb-3">
+        <Form.Group className="mb-3" controlId="formGridName">
+          <Form.Label>Name</Form.Label>
+          <Form.Control type="name" />
+        </Form.Group>
+
+        <Form.Group className="mb-3" controlId="formGridemail">
+          <Form.Label>email</Form.Label>
+          <Form.Control type="email" placeholder="your email" />
+        </Form.Group>
+      </Row>
+
+      <Form.Group className="mb-3" controlId="formGridnumber">
+        <Form.Label>number</Form.Label>
+        <Form.Control />
+      </Form.Group>
+
+      <Form.Group className="mb-3" controlId="formGridmessage">
+        <Form.Label>message</Form.Label>
+        <Form.Control/>
+      </Form.Group>
+     <Button variant="primary" type="send">
+        Submit
+      </Button>
+    </Form>
 </Col>
    </Row>
     </Container>
   );
 }
-

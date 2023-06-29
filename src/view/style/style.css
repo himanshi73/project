@@ -45,4 +45,7 @@
 .beans{
     display: inline-flex;
 }
-
+.nav-bar{
+    padding: 1%;
+    color: black;
+}

@@ -1,7 +1,7 @@
 import { Col, Container, Row,Nav,Button,Form,Navbar,Card,CardGroup } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 import { banner,about } from '../data/Data';
-import { useNavigate,nav } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Details from "../screen/Details";
 export default function Home() {
 console.log(banner)

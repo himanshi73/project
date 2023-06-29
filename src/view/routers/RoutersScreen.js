@@ -4,15 +4,17 @@ import Product from "../screen/Product"
 import Login from "../screen/Login"
 import Home from "../screen/Home"
 import Details from "../screen/Details";
+import Poduct from "../screen/Product"
 export default function RoutersScreen(){
     return(
      <>
      <div>
-        < Link to="/home">Home</Link>
-        < Link to="/product">Product</Link>
-        < Link to="/register">Register</Link>
-        < Link to="/login">Login</Link>
-        < Link to="/details">Details</Link>
+        < Link className="nav-bar" to="/home">Home</Link>
+        < Link className="nav-bar"to="/product">Product</Link>
+        < Link className="nav-bar"to="/register">Register</Link>
+        < Link className="nav-bar" to="/login">Login</Link>
+        < Link className="nav-bar"to="/details">Details</Link>
+        < Link className="nav-bar"to="/product">Product</Link>
      </div>
      <Routes>
         <Route path="/home" Component={Home}/>
@@ -20,6 +22,7 @@ export default function RoutersScreen(){
         <Route path="/login" Component={Login}/>
         <Route path="/product" Component={Product}/>
         <Route path="/details" Component={Details}/>
+        <Route path="/product" Component={Product}/>
      </Routes>
      </>
     )

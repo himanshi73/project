@@ -16,10 +16,10 @@ export default function Login()
    }
     else{
 
-      alert("enter form...")
+      alert("enter email and password")
      }
 }
-function  Register(){
+function Register(){
 alert("register")
 nav("/register")
   }

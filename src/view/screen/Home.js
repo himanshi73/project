@@ -4,11 +4,10 @@ import { banner,about } from '../data/Data';
 import { useNavigate,nav } from 'react-router-dom';
 import Details from "../screen/Details";
 export default function Home() {
-  console.log(banner)
-  console.log(about)
-    const nav = useNavigate()
-
-  return (
+console.log(banner)
+ console.log(about)
+const nav = useNavigate()
+return (
     <Container>
       <Row>
         <Col>
@@ -62,7 +61,7 @@ export default function Home() {
          )
         })
 }      
-       </Carousel> 
+</Carousel> 
  
  <Row>
  <Col className='space'>

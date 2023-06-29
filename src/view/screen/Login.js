@@ -17,10 +17,8 @@ export default function Login()
     else{
 
       alert("enter form...")
-    
-    }
-   
-  }
+     }
+}
 function  Register(){
 alert("register")
 nav("/register")

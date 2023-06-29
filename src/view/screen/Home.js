@@ -19,8 +19,7 @@ return (
           <Nav
             className="me-auto my-2 my-lg-0"
             style={{ maxHeight: '100px'}}
-            navbarScroll
-          >
+            navbarScroll >
             <Nav.Link href="home">Home</Nav.Link>
             <Nav.Link href="home">About</Nav.Link>
             <Nav.Link href="#action3">Blog</Nav.Link>

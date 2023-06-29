@@ -1,18 +1,20 @@
 import { Col, Container, Row,Nav,Button,Form,Navbar,Card,CardGroup } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
-import { banner,product1,about } from '../data/Data';
-import { useNavigate } from 'react-router-dom';
+import { banner,about } from '../data/Data';
+import { useNavigate,nav } from 'react-router-dom';
+import Details from "../screen/Details";
 export default function Home() {
   console.log(banner)
   console.log(about)
-  const nav = useNavigate()
+    const nav = useNavigate()
+
   return (
     <Container>
       <Row>
         <Col>
        <Navbar bg="light" expand="lg">
         <Container fluid>
-        <Navbar.Brand href="#">EDUKATE</Navbar.Brand>
+        <Navbar.Brand href="#">DOZECAFE</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -20,11 +22,11 @@ export default function Home() {
             style={{ maxHeight: '100px'}}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">About</Nav.Link>
-            <Nav.Link href="#action3">Courses</Nav.Link>
-            <Nav.Link href="#action4">Pages</Nav.Link>
-            <Nav.Link href="#action6">Contact</Nav.Link>
+            <Nav.Link href="home">Home</Nav.Link>
+            <Nav.Link href="home">About</Nav.Link>
+            <Nav.Link href="#action3">Blog</Nav.Link>
+            <Nav.Link href="#action4">Customers</Nav.Link>
+            <Nav.Link href="home">Contact</Nav.Link>
             <Nav.Link href="#" disabled>
               
             </Nav.Link>
@@ -109,7 +111,7 @@ export default function Home() {
           <Card.Text>
             looking at its layout. The point of
           </Card.Text>
-          <Button variant="primary">See More</Button>
+          <Button variant="primary"onClick={Details}>See More</Button>
         </Card.Body>
       </Card>
 </div>
@@ -209,7 +211,7 @@ export default function Home() {
   <h1><u>CONTACT US</u></h1>
 </Col>
 </Row>
-    <Form className='form'>
+    <Form className="form">
       <Row className="mb-3">
         <Form.Group className="mb-3" controlId="formGridName">
           <Form.Label>Name</Form.Label>

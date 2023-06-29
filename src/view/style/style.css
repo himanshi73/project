@@ -3,19 +3,12 @@
     height: 200px;
     background-color: aqua;
 }
-
-
-
 .loginform{
     width: 400px;
     height: 500px;
     background-color: aqua;
     margin: auto;
 }
-
-
-
-
 .loginform input, button{
     width: 100%;
     padding: 20px;

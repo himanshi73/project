@@ -5,7 +5,6 @@ import Row from 'react-bootstrap/Row';
 
 export default function Register(){
   return (
-    
     <Form>
       <Row className="mb-3">
         <Form.Group as={Col} controlId="formGridEmail">

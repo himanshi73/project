@@ -34,6 +34,12 @@ function usernav(){
         <input  type="email" placeholder="enter email" value={email} onChange={d=> setEmail(d.target.value)}/>
         <input type="password" value={password} onChange={d=> setPassword(d.target.value)}/>
         <button onClick={loginuser}>Login</button>
+        <div>
+          <div className="line">
+        </div>
+      <button onClick={Register}>register</button>
+      
+      </div>
       </div>
     </>
     );

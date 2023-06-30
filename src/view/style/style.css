@@ -49,3 +49,9 @@
     padding: 1%;
     color: black;
 }
+.line{
+    width: 100%;
+    height: 1px;
+    color: black;
+    padding: 10%;
+}

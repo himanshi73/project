@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 
 export default function Register(){
   return (
+    
     <Form>
       <Row className="mb-3">
         <Form.Group as={Col} controlId="formGridEmail">
@@ -47,8 +48,7 @@ export default function Register(){
           <Form.Control />
         </Form.Group>
       </Row>
-
-      <Form.Group className="mb-3" id="formGridCheckbox">
+     <Form.Group className="mb-3" id="formGridCheckbox">
         <Form.Check type="checkbox" label="Check me out" />
       </Form.Group>
 

@@ -60,7 +60,6 @@ return (
         })
 }      
 </Carousel> 
- 
  <Row>
  <Col className='space'>
   <h1><u>OUR COFFEE OFFER</u></h1>

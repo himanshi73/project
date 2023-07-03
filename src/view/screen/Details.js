@@ -16,7 +16,7 @@ export default function Details(){
         <Card.Title>Expresso</Card.Title>
         <Card.Text>
         Espresso is a coffee-brewing method of Italian origin, in which a small amount of nearly
-         boiling water is forced under 9–10 bars of pressure through finely-ground coffee beans.
+         boiling water is forced under 9–10 bars of pressure.
         </Card.Text>
         <Button variant="primary">oder now</Button>
       </Card.Body>
@@ -38,7 +38,7 @@ export default function Details(){
         <Card.Title>Latte</Card.Title>
         <Card.Text>
         Caffè latte, often shortened to just latte in English, is a coffee drink of Italian origin made 
-        with espresso and steamed milk
+        with espresso and steamed milkthrough finely-ground coffee beans
         </Card.Text>
         <Button variant="primary">oder now</Button>
       </Card.Body>
@@ -55,7 +55,6 @@ export default function Details(){
       </Card.Body>
     </Card>
 </div>
-
 <div className="coffee2">
 <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="https://i0.wp.com/gatherforbread.com/wp-content/uploads/2014/10/Dark-Chocolate-Mocha-Square.jpg?fit=1000%2C1000&ssl=1"/>

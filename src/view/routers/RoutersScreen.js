@@ -4,9 +4,8 @@ import Product from "../screen/Product"
 import Login from "../screen/Login"
 import Home from "../screen/Home"
 import Details from "../screen/Details";
-import Poduct from "../screen/Product"
 export default function RoutersScreen(){
-    return(
+   return(
      <>
      <div>
         < Link className="nav-bar" to="/home">Home</Link>

@@ -20,7 +20,7 @@ export default function Login()
      }
 }
 function Register(){
-alert("register")
+alert("login first")
 nav("/register")
   }
 function usernav(){

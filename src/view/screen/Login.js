@@ -18,8 +18,8 @@ export default function Login()
 
       alert("enter email and password")
      }
-}
-function Register(){
+    }
+     function Register(){
 alert("login first")
 nav("/register")
   }
@@ -27,7 +27,7 @@ function usernav(){
     console.log("nav");
     nav("/home")
   }
- return(
+return(
       <>
       <div class="loginform">
         <h1>User Login..</h1>

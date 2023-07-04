@@ -1,5 +1,5 @@
-export default function Addtocare(){
+export default function Addtocart(){
     return(
-      <h1>Addtocare Screen</h1>
+      <h1>Addtocart Screen</h1>
     )
   }

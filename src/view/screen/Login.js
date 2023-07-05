@@ -29,6 +29,8 @@ function usernav(){
   }
 return(
       <>
+      {
+        user==null?
       <div class="loginform">
         <h1>User Login..</h1>
         <input  type="email" placeholder="enter email" value={email} onChange={d=> setEmail(d.target.value)}/>
@@ -41,6 +43,9 @@ return(
       
       </div>
       </div>
-    </>
+      :
+      usernav()
+}
+   </>
     );
 }

@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom"
 export default function Details(){
     const nav = useNavigate()
     const loc =useLocation()
-    const [datas, setdata] = useState(loc.state)
+    const [data, setdata] = useState(loc.state)
 
 console.log(data);  
 return(

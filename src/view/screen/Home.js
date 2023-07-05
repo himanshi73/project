@@ -2,11 +2,18 @@ import { Col, Container, Row,Nav,Button,Form,Navbar,Card,CardGroup } from 'react
 import Carousel from 'react-bootstrap/Carousel';
 import { banner,about } from '../data/Data';
 import { useNavigate } from 'react-router-dom';
-import Details from "../screen/Details";
+import Product from "../data/Data";
 export default function Home() {
 console.log(banner)
  console.log(about)
 const nav = useNavigate()
+const [user,setUser] = useState(localStorage.getItem("user"))
+const[product1,setProduct] =useState(product)
+function logout(){
+  localStorage.clear()
+  window.location.reload()
+}
+console.log(product1);
 return (
     <Container>
       <Row>
@@ -73,7 +80,7 @@ return (
           <Card.Text>
             looking at its layout. The point of
           </Card.Text>
-          <Button variant="primary">See More</Button>
+          <Button variant="primary"onClick={()=>nav('/product',{state:""})}>See More</Button>
         </Card.Body>
       </Card>
 
@@ -84,7 +91,7 @@ return (
           <Card.Text>
             looking at its layout. The point of
           </Card.Text>
-          <Button variant="primary">See More</Button>
+          <Button variant="primary"onClick={()=>nav('/product',{state:""})}>See More</Button>
         </Card.Body>
       </Card>
 
@@ -96,7 +103,7 @@ return (
           <Card.Text>
           looking at its layout. The point of
           </Card.Text>
-          <Button variant="primary">See More</Button>
+          <Button variant="primary"onClick={()=>nav('/product',{state:""})}>See More</Button>
         </Card.Body>
       </Card>
 
@@ -107,7 +114,7 @@ return (
           <Card.Text>
             looking at its layout. The point of
           </Card.Text>
-          <Button variant="primary"onClick={Details}>See More</Button>
+          <Button variant="primary"onClick={()=>nav('/product',{state:""})}>See More</Button>
         </Card.Body>
       </Card>
 </div>

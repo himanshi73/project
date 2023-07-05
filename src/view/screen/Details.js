@@ -3,15 +3,15 @@ import { useLocation, useNavigate } from "react-router-dom"
 export default function Details(){
     const nav = useNavigate()
     const loc =useLocation()
-    const [data,setData] = useState(loc.state)
+    const [datas, setdata] = useState(loc.state)
 
-console.log(Data);  
-
-  return(
+console.log(data);  
+return(
         <>
         <div className="pdetails">
             <div className="pdetails-img">
                <p>{data.productname}</p>
+               <p>{data.rate}</p>
               </div>    
             
             <div className="pdetails-text">
